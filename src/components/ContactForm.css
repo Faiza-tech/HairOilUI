@@ -1,0 +1,116 @@
+/* ContactForm.css */
+
+
+.contact-form-wrapper {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* fields */
+.field {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+/* inputs */
+.p-inputtext,
+.p-inputtextarea {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+}
+
+.p-inputtext:focus,
+.p-inputtextarea:focus {
+  background: #fff;
+  border-color: #a77d4d;
+}
+
+/* error */
+.p-error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+/* button */
+.p-button {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(135deg, #a77d4d, #8c6239);
+  border: none;
+  color: white;
+  border-radius: 50px;
+}
+
+.p-button:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+/* ================= TOAST CUSTOM ================= */
+
+/* center + width control */
+.p-toast-top-center {
+  width: 100%;
+  max-width: 350px;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+/* message style */
+.p-toast-message {
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* success color */
+.p-toast-message-success {
+  background: #a9d7ab;
+  color: #fff;
+  border: none;
+}
+
+/* text */
+.p-toast-summary {
+  font-weight: 600;
+}
+
+.p-toast-detail {
+  font-size: 0.85rem;
+}
+
+/* ================= MOBILE PERFECT ================= */
+@media (max-width: 768px) {
+
+  .p-toast-top-center {
+    width: 90%;
+    max-width: 320px;
+    top: 15px !important;
+  }
+
+  .p-toast-message {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+}

@@ -1,0 +1,90 @@
+
+/* PAGE */
+.contactPage {
+  padding: 4rem 2rem;
+  background: #faf9f6;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #666;
+}
+
+/* CARDS ROW */
+.cardsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+/* CARD */
+.card {
+  text-align: center;
+
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.card span {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.card h3 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  display: inline-block;
+  margin-top: 5px;
+  background: #25D366;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+
+/* FORM SECTION */
+.formSection {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cardsRow {
+    grid-template-columns: 1fr;
+  }
+}

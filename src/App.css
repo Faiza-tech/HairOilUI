@@ -1,0 +1,10 @@
+/* src/styles/App.css */
+
+.app {
+  min-height: 100vh;
+  background-color: var(--cream);
+}
+
+.page-content {
+  padding-top: 64px;
+}

@@ -1,0 +1,131 @@
+/* ===== Section Common Styles ===== */
+.section-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.section-title.light {
+  color: var(--cream);
+}
+
+.section-subtitle {
+  color: rgba(45, 58, 45, 0.7);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-subtitle.light {
+  color: rgba(245, 242, 235, 0.7);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--cream);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-green);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--cream);
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-accent:hover {
+  background-color: rgba(212, 168, 83, 0.9);
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+}
+
+.btn-sm {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/************* our collection shop btn *****************/
+.pbtn{
+  padding: 5.5rem 2rem;
+  background-color: #faf9f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.soft-btnn {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    border: 1.5px solid #3e3e3e;
+    color: #3e3e3e;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}

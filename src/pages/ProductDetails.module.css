@@ -1,0 +1,277 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.topSection {
+    display: flex;
+    gap: 2rem;
+}
+
+.imageBox img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.details {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* vertical alignment */
+
+    padding: 20px 30px;
+    background: #fff;
+
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+    gap: 12px;
+    /* spacing between items */
+}
+
+.price {
+    font-size: 1.5rem;
+    color: green;
+}
+
+.size {
+    margin: 10px 0;
+}
+
+.addBtn {
+    padding: 10px 20px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 35%;
+}
+
+/* Accordion */
+.accordion {
+    margin-top: 2rem;
+}
+
+.section {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.content {
+    margin-top: 10px;
+    color: #555;
+}
+
+
+/* controls qty */
+
+.qtyControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+
+.qtyControls button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    background-color: #9bcd6e;
+    color: var(--brown);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.qtyControls span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* for size buttons*/
+
+.sizeBox {
+    margin: 1rem 0;
+}
+
+.sizeOptions {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.sizeBtn {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.activeSize {
+    padding: 6px 12px;
+    border: 1px solid green;
+    background: var(--light-green);
+    color: var(--brown);
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+
+
+/* =========================
+   TABLET (≤ 992px)
+========================= */
+@media (max-width: 992px) {
+
+    .topSection {
+        flex-direction: column;
+        /* ✅ stack instead of side-by-side */
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .imageBox {
+        width: 70%;
+        /* ✅ controlled width */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageBox img {
+        width: 100%;
+        max-width: 350px;
+        /* ✅ prevent huge image */
+        height: 350px;
+        /* ✅ fixed visual balance */
+        object-fit: cover;
+        /* keeps it neat */
+        border-radius: 12px;
+    }
+
+    /* DETAILS CARD */
+    .details {
+        padding: 20px;
+        width: min(70%, 500px);
+    }
+
+    .details h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .price {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .qtyControls {
+        justify-content: center;
+    }
+
+    .addBtn {
+        width: 45%;
+         display: block;  /*allows margin centering */
+    margin: 10px auto 0; /* ✅ centers it horizontally */
+    text-align: center;
+    }
+
+    .content {
+        margin-top: 12px;
+        color: #555;
+        line-height: 1.7;
+        /* ✅ better readability */
+        font-size: 0.95rem;
+        /* cleaner */
+    }
+
+    .content ul {
+        padding-left: 0;
+    }
+
+    .content li {
+        list-style: none;
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 18px;
+    }
+
+    .content li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #8BC34A;
+        /* your brand green */
+        font-weight: bold;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: 600;
+        padding: 12px 0;
+        /* ✅ more breathing space */
+        font-size: 1rem;
+    }
+
+    .section {
+        border-top: 1px solid #eee;
+        /* softer */
+        padding: 12px 0;
+    }
+}
+
+
+/* =========================
+   MOBILE (≤ 600px)
+========================= */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 1.5rem;
+    }
+
+    .imageBox img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .details {
+        padding: 15px;
+    }
+
+    .details h2 {
+        font-size: 1.4rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .addBtn {
+        padding: 12px;
+        font-size: 0.95rem;
+    }
+
+    .qtyControls button {
+        width: 32px;
+        height: 32px;
+    }
+}

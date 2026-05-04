@@ -1,0 +1,115 @@
+.product-section.soft {
+    /*  padding: 5.5rem 2rem;*/
+    padding-top: 5.5rem;
+    background-color: #faf9f6;
+    /* calm neutral */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-inner {
+    max-width: 650px;
+    text-align: center;
+}
+
+/* Heading */
+.product-inner h2 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #3e3e3e;
+    margin-bottom: 1.2rem;
+}
+
+/* Text */
+.product-inner p {
+    font-size: 1.05rem;
+    color: #6a6a6a;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+/* subtle divider */
+.divider {
+    width: 60px;
+    height: 2px;
+    background-color: #cfcfcf;
+    margin: 0 auto 2.2rem;
+}
+
+/* Button */
+.soft-btn {
+    display: inline-block;
+    padding: 0.8rem 2.4rem;
+    border: 1.5px solid #3e3e3e;
+    color: #3e3e3e;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.soft-btn:hover {
+    background-color: #3e3e3e;
+    /*#795B5B  */
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .section {
+        padding: 2rem 1.5rem 0px;
+    }
+
+    .product-section.soft {
+        padding: 2rem 2rem 0px;
+        /*padding-top: 2rem;*/
+        background-color: #faf9f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* ================= PRODUCT SECTION (TEXT BLOCK) ================= */
+    .product-inner h2 {
+        font-size: 2rem;
+    }
+
+    .product-inner p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* Initial hidden state */
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    /* start lower */
+    transition: all 0.8s ease-out;
+}
+
+/* Animate when in view */
+.fade-up.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Optional: stagger multiple elements */
+.product-inner h2.fade-up,
+.product-inner p.fade-up,
+.product-inner .soft-btn.fade-up {
+    transition-delay: 0.2s;
+}
+
+.product-inner p.fade-up {
+    transition-delay: 0.4s;
+}
+
+.product-inner .soft-btn.fade-up {
+    transition-delay: 0.6s;
+}

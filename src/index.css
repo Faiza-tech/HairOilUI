@@ -1,0 +1,44 @@
+/*  Global css   */
+
+/* ========================== */
+/*  BASE STYLES        */
+/* ========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  background-color: #FAF8F5;
+  color: #3E3E3E;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+
+/* ========================== */
+/* VARIABLES                  */
+/* ========================== */
+:root {
+  --brown: #5D4037;
+  --cream: #FAF8F5;
+  --sage: #D5E1C8;
+  --gold: #D4A03A;
+  --text-dark: #3E3E3E;
+  --white: #ffffff;
+
+  --primary: #2d3a2d;
+  --secondary: #a8c686;
+  --accent: #d4a853;
+  --dark-green: #1a2e1a;
+}
+

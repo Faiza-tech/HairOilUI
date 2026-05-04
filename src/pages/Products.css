@@ -1,0 +1,162 @@
+/* ===== PAGE WRAPPER ===== */
+.products-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.products-page h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5D4037;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== VIEW TOGGLE BAR ===== */
+.view-toggle-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.show-results h6 {
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+}
+
+.gl-buttons button {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.gl-buttons button.active {
+    background-color: #8BC34A;
+    color: #fff;
+    border-color: #689f38;
+}
+
+/* ===== GRID VIEW ===== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+/* ===== LIST WRAPPER ===== */
+.products-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 7px 12px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.pagination button:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination button.active-page {
+    background-color: #8BC34A;
+    color: white;
+    border-color: #4caf50;
+    font-weight: 600;
+    transform: scale(1.05);
+}
+
+
+
+/* ================= MOBILE CLEAN UX  for list  ================= */
+
+/* =========================
+   MOBILE UX (CLEAN MODE)
+========================= */
+
+@media (max-width: 600px) {
+
+    /* hide grid/list toggle */
+    .gl-buttons {
+        display: none;
+    }
+
+    /* force single column grid */
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* hide list mode completely (you decided no list on mobile) */
+    .products-list {
+        display: none;
+    }
+
+    /* page padding fix */
+    .products-page {
+        padding: 1rem;
+    }
+
+    .products-page h1 {
+        font-size: 1.6rem;
+    }
+
+    /* image slightly tighter on mobile */
+    .product-card img {
+        aspect-ratio: 1 / 1;
+        padding: 8px;
+    }
+}
+
+
+/*****  for loading *****/
+
+.loader {
+  text-align: center;
+  padding: 40px;
+  font-size: 1rem;
+  color: #777;
+}
+
+/***** Instead of text, use spinner: *****/
+.loader::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 3px solid #ddd;
+  border-top: 3px solid #8BC34A;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,157 @@
+/* ========================= */
+/* FOOTER BASE */
+/* ========================= */
+
+.footer {
+  background: linear-gradient(135deg, #1a2e1a, #0f1c0f);
+  color: #f5f2eb;
+  padding: 5rem 2rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* soft glow effect */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 300px;
+  height: 300px;
+  background: rgba(168, 198, 134, 0.12);
+  filter: blur(120px);
+  border-radius: 50%;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.footer-grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+/* desktop layout */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* ========================= */
+/* BRAND */
+/* ========================= */
+
+.footer-logo-wrap {
+  margin-bottom: 1rem;
+}
+
+.footer-logo-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  color: rgba(245, 242, 235, 0.65);
+  line-height: 1.7;
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+/* ========================= */
+/* HEADINGS */
+/* ========================= */
+
+.footer-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #f5f2eb;
+}
+
+/* ========================= */
+/* LINKS */
+/* ========================= */
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+color: #f5f2eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #a8c686;
+  transform: translateX(4px);
+}
+
+/* ========================= */
+/* SOCIAL */
+/* ========================= */
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: rgba(245, 242, 235, 0.65);
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #a8c686;
+  transform: scale(1.1);
+}
+
+/* ========================= */
+/* BOTTOM BAR */
+/* ========================= */
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(245, 242, 235, 0.1);
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(245, 242, 235, 0.5);
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer-tagline {
+    margin: 0 auto;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
