@@ -55,8 +55,6 @@ const Cart = () => {
 
           <div className={styles["cart-total"]}>
             <h2>Total: ₹{total.toLocaleString("en-PK")}</h2>
-
-            {/* Replace input with call/email info */}
             <p className={styles["order-info"]}>
               To place your order, please call us at{" "}
               <strong>+1-234-567-8901</strong>

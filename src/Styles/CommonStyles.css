@@ -62,7 +62,7 @@
   background-color: var(--dark-green);
 }
 
-.btn-outline {
+/*.btn-outline {
   background-color: transparent;
   color: var(--primary);
   padding: 0.75rem 1.5rem;
@@ -72,12 +72,12 @@
   font-family: inherit;
   font-size: 0.9rem;
   transition: all 0.3s;
-}
+}*/
 
-.btn-outline:hover {
+/*.btn-outline:hover {
   background-color: var(--primary);
   color: var(--cream);
-}
+}*/
 
 .btn-accent {
   background-color: var(--accent);

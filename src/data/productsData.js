@@ -24,8 +24,6 @@ export const productsData = [
     title: "Nourishing Blend",
     description: "Deep conditioning with argan & coconut oils",
     price: 349.99,
-     hasSize: true,
-    sizes: ["100ml", "250ml", "500ml"],
     features: [
       "Argan oil enriched",
       "Deep scalp nourishment",
@@ -40,8 +38,6 @@ export const productsData = [
     title: "Whitening Rice Soap",
     description: "Glow your skin",
     price: 399.99,
-     hasSize: true,
-    sizes: ["100g", "200g"],
     features: [
       "Brightens skin tone",
       "Removes tan",
@@ -56,8 +52,6 @@ export const productsData = [
     title: "Amla Hair Oil",
     description: "Lightweight jojoba & vitamin E blend",
     price: 299.99,
-     hasSize: true,
-    sizes: ["100ml", "250ml"],   // ✅ ADDED (important fix)
     features: [
       "Prevents hair fall",
       "Strengthens roots",
@@ -71,8 +65,6 @@ export const productsData = [
     title: "Organic Orange Soap",
     description: "Deep nourishment.",
     price: 299.99,
-     hasSize: true,
-    sizes: ["100g", "200g"]   // ✅ ADDED (soap needs size)
   },
 
   {
@@ -81,7 +73,6 @@ export const productsData = [
     title: "Combo Pack",
     description: "Best value combo.",
     price: 699,
-    // ❌ NO sizes (correct)
   },
 
   {
@@ -90,8 +81,6 @@ export const productsData = [
     title: "Herbal Hair Oil",
     description: "Natural herbs reduce hair fall.",
     price: 299,
-     hasSize: true,
-    sizes: ["100ml", "250ml", "500ml"]
   },
 
   {
@@ -100,8 +89,6 @@ export const productsData = [
     title: "Onion Hair Oil",
     description: "Boosts hair growth.",
     price: 349,
-     hasSize: true,
-    sizes: ["100ml", "250ml", "500ml"]
   },
 
   {
@@ -110,8 +97,6 @@ export const productsData = [
     title: "Amla Hair Oil",
     description: "Adds shine, prevents greying.",
     price: 350,
-     hasSize: true,
-    sizes: ["100ml", "250ml", "500ml"]
   },
 
   {
@@ -120,7 +105,6 @@ export const productsData = [
     title: "Hair Accessories",
     description: "Hair Accessories.",
     price: 199,
-    // ❌ NO sizes (correct)
   },
   {
   id: 10,
@@ -207,103 +191,3 @@ export const productsData = [
   ]
 }
 ];
-
-
-
-
-
-
-/*import p1 from "../assets/product11.png";
-import p2 from "../assets/product22.png";
-import p3 from "../assets/product33.png";
-import p4 from "../assets/product4.jpeg";
-import p5 from "../assets/comboo.png";
-import h22 from "../assets/h22.png";
-import h33 from "../assets/h33.png";
-import h44 from "../assets/h44.png";
-import soapp from "../assets/soapp.png";
-
-export const productsData = [
-  {
-    id: 1,
-    image: h22,
-    title: "Nourishing Blend",
-    description: "Deep conditioning with argan & coconut oils",
-    price: 349.99,
-    sizes: ["100ml", "250ml", "500ml"], 
-     features: [
-      "Argan oil enriched",
-      "Deep scalp nourishment",
-      "Reduces dryness",
-      "Adds shine"
-    ]
-  },
-  {
-    id: 2,
-    image: h33,
-    title: "Whitening Rice Soap",
-    description: "Glow your skin",
-    price: 399.99,
-      sizes: ["100g", "200g"],       // ✅ soaps can differ
-    features: [
-      "Brightens skin tone",
-      "Removes tan",
-      "Natural rice extract",
-      "Gentle for daily use"
-    ]
-  },
-  {
-    id: 3,
-    image: h44,
-    title: "Amla Hair Oil",
-    description: "Lightweight jojoba & vitamin E blend",
-    price: 299.99,
-     features: [
-      "Prevents hair fall",
-      "Strengthens roots",
-      "Improves hair texture"
-    ]
-  },
-  {
-    id: 4,
-    image: soapp,
-    title: "Organic Orange Soap",
-    description: "Deep nourishment.",
-    price: 299.99,
-  },
-  {
-    id: 5,
-    image: p5,
-    title: "Combo Pack",
-    description: "Best value combo.",
-    price: 699,
-  },
-  {
-    id: 6,
-    image: p1,
-    title: "Herbal Hair Oil",
-    description: "Natural herbs reduce hair fall.",
-    price: 299,
-  },
-  {
-    id: 7,
-    image: p2,
-    title: "Onion Hair Oil",
-    description: "Boosts hair growth.",
-    price: 349,
-  },
-  {
-    id: 8,
-    image: p3,
-    title: "Amla Hair Oil",
-    description: "Adds shine, prevents greying.",
-    price: 350,
-  },
-  {
-    id: 9,
-    image: p4,
-    title: "Hair Accesories",
-    description: "Hair Accesories.",
-    price: 199,
-  }
-];*/

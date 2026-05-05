@@ -4,15 +4,14 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
 
-  
+
   return (
     <section className={styles.contactPage}>
 
       {/* HERO */}
       <div className={styles.hero}>
         <h1>Contact Us</h1>
-       {/**<p>We’re here to help you with anything you need.</p> */} 
-      <p>We’d love to hear from you. Reach out with any questions and we’ll be happy to help.</p> 
+        <p>We’d love to hear from you. Reach out with any questions and we’ll be happy to help.</p>
       </div>
 
       {/* CARDS (TOP ROW) */}
@@ -39,9 +38,8 @@ const Contact = () => {
             rel="noopener noreferrer"
             className={styles.whatsapp}
           >
-          Chat Now 
+            Chat Now
           </a>
-         {/** <p>Start a chat instantly</p> */}
         </div>
 
       </div>

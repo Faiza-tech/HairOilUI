@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import footerLogo from "../assets/FooterLogoo.png"; // change path if needed
+import footerLogo from "../assets/FooterLogoo.png";
 
 const Footer = () => {
   return (

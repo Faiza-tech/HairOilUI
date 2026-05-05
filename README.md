@@ -7,7 +7,7 @@ This project focuses on clean UI, reusable components, and real-world shopping f
 
 ## 🚀 Live Demo
 
-👉 ( Soon  deployed link here)
+👉 ( SOON  deployed link here)
 
 ---
 

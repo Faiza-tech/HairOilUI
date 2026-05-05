@@ -16,20 +16,16 @@
 
 .details {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* vertical alignment */
-
     padding: 20px 30px;
     background: #fff;
-
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-
     gap: 12px;
-    /* spacing between items */
+
 }
 
 .price {
@@ -141,14 +137,13 @@
 
     .topSection {
         flex-direction: column;
-        /* ✅ stack instead of side-by-side */
         align-items: center;
         gap: 1.5rem;
     }
 
     .imageBox {
         width: 70%;
-        /* ✅ controlled width */
+        /*  controlled width */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -157,11 +152,8 @@
     .imageBox img {
         width: 100%;
         max-width: 350px;
-        /* ✅ prevent huge image */
         height: 350px;
-        /* ✅ fixed visual balance */
         object-fit: cover;
-        /* keeps it neat */
         border-radius: 12px;
     }
 
@@ -187,18 +179,17 @@
 
     .addBtn {
         width: 45%;
-         display: block;  /*allows margin centering */
-    margin: 10px auto 0; /* ✅ centers it horizontally */
-    text-align: center;
+        display: block;
+        margin: 10px auto 0;
+        text-align: center;
     }
 
     .content {
         margin-top: 12px;
         color: #555;
         line-height: 1.7;
-        /* ✅ better readability */
         font-size: 0.95rem;
-        /* cleaner */
+
     }
 
     .content ul {
@@ -217,7 +208,6 @@
         position: absolute;
         left: 0;
         color: #8BC34A;
-        /* your brand green */
         font-weight: bold;
     }
 
@@ -227,13 +217,11 @@
         cursor: pointer;
         font-weight: 600;
         padding: 12px 0;
-        /* ✅ more breathing space */
         font-size: 1rem;
     }
 
     .section {
         border-top: 1px solid #eee;
-        /* softer */
         padding: 12px 0;
     }
 }

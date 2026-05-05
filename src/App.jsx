@@ -8,7 +8,7 @@ import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 import { CartProvider } from "./context/CartContext";
 import "./App.css";
-import './Styles/CommonStyles.css'
+import './Styles/CommonStyles.css' // css
 
 import ProductDetails from "./pages/ProductDetails";
 import ScrollToTop from "./components/ScrollToTop";

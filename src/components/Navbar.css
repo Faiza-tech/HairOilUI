@@ -41,8 +41,6 @@
   height: 50px;
   width: auto;
   display: block;
-
-  /* FIX FADED LOOK */
   opacity: 1;
   filter: contrast(115%) brightness(95%);
 }
@@ -197,7 +195,6 @@
   /* RIGHT SIDE */
   .nav-right {
     display: flex;
-    /* ✅ shows mobile icons */
     align-items: center;
     gap: 14px;
   }

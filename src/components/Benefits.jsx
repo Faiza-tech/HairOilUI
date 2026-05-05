@@ -1,4 +1,4 @@
-import React from 'react'
+
 import './Benefits.css'
 import { ChevronRight, Leaf, Droplets, Sun, Star } from "lucide-react";
 
